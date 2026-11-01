@@ -32,6 +32,13 @@ Sandbox-specific details (see `.base44/nginx.conf`):
 - Hidden paths (`.git`, `.base44`) are denied because the whole repo is mounted.
 - Caching is disabled so edits show immediately.
 
+## Deployment (GitHub Pages)
+
+The site is published with GitHub Pages from `.github/workflows/pages.yml`
+(publishes the repo root on every push to `main`). One-time setup in the repo:
+**Settings → Pages → Source: "GitHub Actions"**. The public URL is
+`https://oscarsuarez13.github.io/lefr./`.
+
 ## Verifying it works
 
 ```bash
